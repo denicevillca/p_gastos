@@ -14,7 +14,11 @@ public function store(){
 'subject'=>'required',
 'content'=>'required'
 
-  ]);
+  ],[
+
+  	'name.required'=>'Te falto tu nombre'
+  ]
+);
 
 }
 
