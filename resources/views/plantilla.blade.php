@@ -13,7 +13,11 @@
   <body>
     <div class="container ">
       <a href="{{route('gasto')}}" class="btn btn-primary ">Fotos</a>
+
       <a href="{{ route('ingreso')}}" class="btn btn-primary">Blog</a>
+      
+      <a href="{{ route('inicio')}}" class="btn btn-primary">inicio</a>
+
     </div>
 
 

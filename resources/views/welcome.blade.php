@@ -62,6 +62,7 @@
       <th scope="col">Descripcion</th>
       <th scope="col">Fecha</th>
       <th scope="col">monto</th>
+      <th scope="col">Acciones</th>
       
     </tr>
   </thead>
@@ -76,11 +77,30 @@
       <td>{{$item->descripcion}}</td>
       <td>{{$item->fecha}}</td>
       <td>{{$item->monto}}</td>
-   
+    <td>
+
+      <a href="{{route('gasto.editar',$item)}}" class="btn btn-warning">Editar</a>
+         
+      
+      <form action=
+
+      "{{route('gasto.eliminar',$item)}}" method="POST" class="d-inline">
+        
+        @method('DELETE')
+
+        @csrf
+
+        <button class="btn btn-primary btn-sm" >Eliminar</button>
+
+      </form>
+
+
+    </td>
     </tr>
     
     @endforeach()
      </tbody>
 
 </table>
+{{$gasto->links()}}
 @endsection
