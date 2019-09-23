@@ -15,10 +15,10 @@ Route::put('/editar/{id}','PaginaController@actualizar')->name('gasto.actualizar
 Route::delete('/eliminar/{id}','Paginacontroller@eliminar')->name('gasto.eliminar');
 
 
-Route:: get('fotos',function(){
-return view('foto');
 
-})->name('gasto');
+Route::view('/contacto','contacto')->name('contacto');
+Route::post('contacto','MessagesController@store');
+
 
 Route::get('/inicio','PaginaController@inicio1')->name('inicio1');
 

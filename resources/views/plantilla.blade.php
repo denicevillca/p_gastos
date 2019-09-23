@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container ">
-      <a href="{{route('gasto')}}" class="btn btn-primary ">Fotos</a>
+      <a href="{{route('contacto')}}" class="btn btn-primary ">contacto</a>
 
       <a href="{{ route('ingreso')}}" class="btn btn-primary">Blog</a>
       
