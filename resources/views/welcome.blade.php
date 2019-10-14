@@ -2,7 +2,10 @@
      @section('seccion')
 
      <h1 class="display-4">Gastos</h1>
-     
+     @auth
+     {{auth()->user()->name}}
+    @endauth
+
      @if(session('mensaje'))
 
      <div class="alert alert-success">{{session('mensaje')}}</div>

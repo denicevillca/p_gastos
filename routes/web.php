@@ -28,3 +28,13 @@ return view('blog');
 })->name('ingreso');
 
 Route::post('/','PaginaController@crear')->name('gasto.crear');
+
+
+Auth::routes();
+
+Route::get ('/redirect','SocialController@redirect');
+
+Route::get ('/callback','SocialController@callback');
+
+Route::get('/redirect', 'SocialAuthGoogleController@redirect');
+Route::get('/callback', 'SocialAuthGoogleController@callback');

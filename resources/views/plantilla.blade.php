@@ -17,6 +17,16 @@
       <a href="{{ route('ingreso')}}" class="btn btn-primary">Blog</a>
       
       <a href="{{ route('inicio')}}" class="btn btn-primary">inicio</a>
+       @guest
+        <li><a href="{{route('login')}}">login</a></li>
+@else
+<li><a href="#"onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Cerrar Seción</a></li>
+
+       @endguest
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
 
     </div>
 
