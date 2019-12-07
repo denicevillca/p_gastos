@@ -14,7 +14,7 @@
     <div class="container ">
       <a href="{{route('contacto')}}" class="btn btn-primary ">contacto</a>
 
-      <a href="{{ route('ingreso')}}" class="btn btn-primary">Blog</a>
+      <a href="{{ route('ingreso')}}" class="btn btn-primary">ingreso</a>
       
       <a href="{{ route('inicio')}}" class="btn btn-primary">inicio</a>
        @guest
